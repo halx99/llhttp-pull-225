@@ -1,11 +1,10 @@
-# C++ HTPP TEST
+# Reproduce issue as llhttp pull-225 description
 
-This is a sample to test some HTTP libs.
+Step:
+```sh
+# first time is ok
+cmake -B build
 
-## How to build
-
-Execute on terminal:
-
-```
-./build.sh
+# after first time, always fail until delete libllhttp.pc manually
+cmake -B build
 ```
